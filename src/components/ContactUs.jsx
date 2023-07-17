@@ -59,11 +59,6 @@ return (
                   <span className="text-cl_blue-4"> FOR </span>
                   PARTNERSHIP?
                 </h1>
-                <p className="mt-6 mb-8 text-lg sm:mb-12 text-purple-body">
-                  Email to partner on consulting projects or other partnerships
-                  including speaking engagement, community projects, research
-                  projects, etc.
-                </p>
               </div>
 
 
@@ -137,7 +132,7 @@ return (
         <div className="flex items-center justify-center">
           <button
             className={`${
-              loading ? "cl_blue-4 cursor-not-allowed" : "cl_blue-4 transform hover:scale-110 transition-transform duration-300"
+              loading ? "bg-cl_blue-4 cursor-not-allowed" : "bg-cl_blue-4 transform hover:scale-110 transition-transform duration-300"
             } text-white font-bold py-2 px-4 rounded-lg flex items-center focus:outline-none`}
             type="submit"
             disabled={loading}
@@ -183,7 +178,9 @@ return (
               </div> */}
             </div>
 
-            <div class="w-full sm:w-1/2 p-6 sm:order-first">
+            <div class="w-full sm:w-1/2 p-6 sm:order-first flex-col
+              flex justify-center item-center"
+            >
               <Lottie options={animationOptions} height={350} width={350} />
             </div>
           </div>
