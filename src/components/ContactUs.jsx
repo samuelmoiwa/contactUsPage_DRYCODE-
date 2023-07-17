@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import { useForm } from "react-hook-form";
 import { HiUserCircle, HiMail, HiOutlinePencilAlt } from 'react-icons/hi';
+import { FaPhone } from 'react-icons/fa';
 import { AiOutlineLoading } from 'react-icons/ai';
 import { IoIosSend } from 'react-icons/io';
 import mailBox from "../lottieFile/contact_us_lottieFile.json"
@@ -116,22 +117,22 @@ return (
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <HiMail className="h-5 w-5 text-gray-400" />
+              <FaPhone className="h-5 w-5 text-gray-400" />
             </div>
             <input
               className={`${
                 errors.phone ? "border-red-500" : ""
               } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-purple`}
-              type="email"
+              type="phone"
               placeholder="phone number"
               {...register("phone", {
                 required: true,
-                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                pattern: /^\+?[0-9]{1,}$/,
               })}
             />
           </div>
           {errors.email && (
-            <p className="text-red-500 text-xs mt-1">Invalid email address</p>
+            <p className="text-red-500 text-xs mt-1">Invalid phone number</p>
           )}
         </div>
 
