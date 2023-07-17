@@ -49,7 +49,7 @@ const loading = watch("loading");
 
 return (
   <>
-        <section class="bg-white border-b py-8" id="services">
+        <section class="bg-white border-b border-t py-8" id="services">
         <div class="container max-w-5xl mx-auto m-8">
           <div class="flex flex-wrap flex-col sm:flex-row" data-aos="fade-up">
             <div class="w-full sm:w-1/2 p-6">
@@ -84,6 +84,7 @@ return (
             <p className="text-red-500 text-xs mt-1">Name is required</p>
           )}
         </div>
+
         <div className="mb-4 mx-2">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
             Email <span className="text-red-500">*</span>
@@ -108,6 +109,32 @@ return (
             <p className="text-red-500 text-xs mt-1">Invalid email address</p>
           )}
         </div>
+
+        <div className="mb-4 mx-2">
+          <label className="block text-gray-700 font-bold mb-2" htmlFor="tele">
+            Phone <span className="text-red-500">*</span>
+          </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <HiMail className="h-5 w-5 text-gray-400" />
+            </div>
+            <input
+              className={`${
+                errors.phone ? "border-red-500" : ""
+              } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-purple`}
+              type="email"
+              placeholder="phone number"
+              {...register("phone", {
+                required: true,
+                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              })}
+            />
+          </div>
+          {errors.email && (
+            <p className="text-red-500 text-xs mt-1">Invalid email address</p>
+          )}
+        </div>
+
         <div className="mb-4 mx-2">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
             Message <span className="text-red-500">*</span>
