@@ -56,7 +56,7 @@ return (
               <div class="text-gray-600 mb-8 text-justify">
                 <h1 className="text-4xl font-bold leading-none sm:text-4xl text-purple-header">
                   READY <br />
-                  <span className="text-purple"> FOR </span>
+                  <span className="text-cl_blue-4"> FOR </span>
                   PARTNERSHIP?
                 </h1>
                 <p className="mt-6 mb-8 text-lg sm:mb-12 text-purple-body">
