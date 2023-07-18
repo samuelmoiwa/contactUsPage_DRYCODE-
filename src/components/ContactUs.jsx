@@ -10,10 +10,10 @@ import { AiOutlineLoading } from "react-icons/ai";
 import { IoIosSend } from "react-icons/io";
 import mailBox from "../lottieFile/contact_us_lottieFile.json";
 
-import gitHub from "../icons/icon_github.svg"
-import linkedIn from "../icons/icon_linkedin.svg"
-import facebook from "../icons/icon_facebook.svg"
-import phone from "../icons/icon_phone.svg"
+import gitHub from "../icons/icon_github.svg";
+import linkedIn from "../icons/icon_linkedin.svg";
+import facebook from "../icons/icon_facebook.svg";
+import phone from "../icons/icon_phone.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,9 +32,7 @@ function ContactUs() {
 
   const form = useRef();
 
-  const sendEmail = async (e) => {
-    // e.preventDefault();
-
+  const sendEmail = async () => {
     try {
       await emailjs.sendForm(
         "service_nd857p7",
@@ -109,7 +107,8 @@ function ContactUs() {
                     <input
                       className={`${
                         errors.name ? "border-red-500" : ""
-                      } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-purple`}
+                      } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight
+                      focus:outline-none focus:border-purple`}
                       type="text"
                       placeholder="Samuel Moiwa"
                       {...register("name", { required: true })}
@@ -136,7 +135,8 @@ function ContactUs() {
                     <input
                       className={`${
                         errors.email ? "border-red-500" : ""
-                      } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-purple`}
+                      } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight
+                        focus:outline-none focus:border-purple`}
                       type="email"
                       placeholder="mail@example.com"
                       {...register("email", {
@@ -166,7 +166,8 @@ function ContactUs() {
                     <input
                       className={`${
                         errors.phone ? "border-red-500" : ""
-                      } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-purple`}
+                      } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700
+                        leading-tight focus:outline-none focus:border-purple`}
                       type="phone"
                       placeholder="phone number"
                       {...register("phone", {
@@ -259,53 +260,51 @@ function ContactUs() {
             >
               <Lottie options={animationOptions} height={350} width={350} />
 
-
               <div
-                  className="flex space-y-4 sm:items-center
+                className="flex space-y-4 sm:items-center
                   sm:flex-row sm:space-y-0 mt-6
                   sm:space-x-4 lg:justify-center md:items-center"
+              >
+                <a
+                  rel="GitHub noreferrer"
+                  href="https://github.com/samuelmoiwa"
+                  target="_blank"
+                  className="px-4 py-2 flex justify-center
+                    transform hover:scale-110 transition-transform duration-300"
                 >
-                  <a
-                    rel="GitHub noreferrer"
-                    href="https://github.com/samuelmoiwa"
-                    target="_blank"
-                    className="px-4 py-2 flex justify-center
-                    transform hover:scale-110 transition-transform duration-300"
-                  >
-                    <img class="w-10 h-10" src={gitHub} alt="image" />
-                  </a>
+                  <img class="w-10 h-10" src={gitHub} alt="image" />
+                </a>
 
-                  <a
-                    rel="LinkedIn noreferrer"
-                    href="https://www.linkedin.com/in/samuelmoiwa/"
-                    target="_blank"
-                    className="px-4 py-2 flex justify-center
+                <a
+                  rel="LinkedIn noreferrer"
+                  href="https://www.linkedin.com/in/samuelmoiwa/"
+                  target="_blank"
+                  className="px-4 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
-                  >
-                    <img class="w-10 h-10 " src={linkedIn} alt="image" />
-                  </a>
+                >
+                  <img class="w-10 h-10 " src={linkedIn} alt="image" />
+                </a>
 
-                  <a
-                    rel="facebook noreferrer"
-                    href="https://www.facebook.com/samuel.moiwa"
-                    target="_blank"
-                    className="px-4 py-2 flex justify-center
+                <a
+                  rel="facebook noreferrer"
+                  href="https://www.facebook.com/samuel.moiwa"
+                  target="_blank"
+                  className="px-4 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
-                  >
-                    <img class="w-10 h-10 " src={facebook} alt="image" />
-                  </a>
+                >
+                  <img class="w-10 h-10 " src={facebook} alt="image" />
+                </a>
 
-                  <a
-                    rel="phone"
-                    href="tel: +23279356563"
-                    className="px-4 py-2 flex justify-center
+                <a
+                  rel="phone"
+                  href="tel: +23279356563"
+                  className="px-4 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
-                  >
-                    <img class="w-10 h-10 " src={phone} alt="image" />
-                  </a>
+                >
+                  <img class="w-10 h-10 " src={phone} alt="image" />
+                </a>
               </div>
             </div>
-
           </div>
         </div>
       </section>
