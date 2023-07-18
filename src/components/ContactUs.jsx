@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Lottie from "react-lottie";
@@ -7,6 +8,11 @@ import { FaPhone } from "react-icons/fa";
 import { AiOutlineLoading } from "react-icons/ai";
 import { IoIosSend } from "react-icons/io";
 import mailBox from "../lottieFile/contact_us_lottieFile.json";
+
+import gitHub from "../icons/icon_github.svg"
+import linkedIn from "../icons/icon_linkedin.svg"
+import facebook from "../icons/icon_facebook.svg"
+import phone from "../icons/icon_phone.svg"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,13 +33,6 @@ function ContactUs() {
 
   const sendEmail = async (e) => {
     // e.preventDefault();
-    // emailjs.sendForm('service_nd857p7', 'template_0liycub', form.current, 'DvyYTrHzMghHjXCHS')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
-    //   reset();
 
     try {
       await emailjs.sendForm(
@@ -258,7 +257,54 @@ function ContactUs() {
               flex justify-center item-center"
             >
               <Lottie options={animationOptions} height={350} width={350} />
+
+
+              <div
+                  className="flex space-y-4 sm:items-center
+                  sm:flex-row sm:space-y-0 mt-6
+                  sm:space-x-4 lg:justify-start md:items-center"
+                >
+                  <a
+                    rel="GitHub"
+                    href="https://github.com/samuelmoiwa"
+                    target="_blank"
+                    className="px-4 py-2 flex justify-center
+                    transform hover:scale-110 transition-transform duration-300"
+                  >
+                    <img class="w-10 h-10" src={gitHub} alt="image" />
+                  </a>
+
+                  <a
+                    rel="LinkedIn"
+                    href="https://www.linkedin.com/in/samuelmoiwa/"
+                    target="_blank"
+                    className="px-4 py-2 flex justify-center
+                    transform hover:scale-110 transition-transform duration-300"
+                  >
+                    <img class="w-10 h-10 " src={linkedIn} alt="image" />
+                  </a>
+
+                  <a
+                    rel="facebook"
+                    href="https://www.facebook.com/samuel.moiwa"
+                    target="_blank"
+                    className="px-4 py-2 flex justify-center
+                    transform hover:scale-110 transition-transform duration-300"
+                  >
+                    <img class="w-10 h-10 " src={facebook} alt="image" />
+                  </a>
+
+                  <a
+                    rel="phone"
+                    href="tel: +23279356563"
+                    className="px-4 py-2 flex justify-center
+                    transform hover:scale-110 transition-transform duration-300"
+                  >
+                    <img class="w-10 h-10 " src={phone} alt="image" />
+                  </a>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
