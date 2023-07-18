@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -110,7 +111,7 @@ function ContactUs() {
                         errors.name ? "border-red-500" : ""
                       } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-purple`}
                       type="text"
-                      placeholder="John Doe"
+                      placeholder="Samuel Moiwa"
                       {...register("name", { required: true })}
                     />
                   </div>
@@ -137,7 +138,7 @@ function ContactUs() {
                         errors.email ? "border-red-500" : ""
                       } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight focus:outline-none focus:border-purple`}
                       type="email"
-                      placeholder="johndoe@example.com"
+                      placeholder="mail@example.com"
                       {...register("email", {
                         required: true,
                         pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -262,10 +263,10 @@ function ContactUs() {
               <div
                   className="flex space-y-4 sm:items-center
                   sm:flex-row sm:space-y-0 mt-6
-                  sm:space-x-4 lg:justify-start md:items-center"
+                  sm:space-x-4 lg:justify-center md:items-center"
                 >
                   <a
-                    rel="GitHub"
+                    rel="GitHub noreferrer"
                     href="https://github.com/samuelmoiwa"
                     target="_blank"
                     className="px-4 py-2 flex justify-center
@@ -275,7 +276,7 @@ function ContactUs() {
                   </a>
 
                   <a
-                    rel="LinkedIn"
+                    rel="LinkedIn noreferrer"
                     href="https://www.linkedin.com/in/samuelmoiwa/"
                     target="_blank"
                     className="px-4 py-2 flex justify-center
@@ -285,7 +286,7 @@ function ContactUs() {
                   </a>
 
                   <a
-                    rel="facebook"
+                    rel="facebook noreferrer"
                     href="https://www.facebook.com/samuel.moiwa"
                     target="_blank"
                     className="px-4 py-2 flex justify-center
