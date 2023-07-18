@@ -54,7 +54,7 @@ function Footer() {
         </div>
         <hr className="border-gray-600 my-6" />
         <div className="text-center text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Aberdeen Watta Taxi. All rights
+          &copy; {new Date().getFullYear()} Mail Moiwa. All rights
           reserved.
         </div>
       </div>
