@@ -17,12 +17,12 @@ function Footer() {
             <p className="text-gray-600 mt-2">
               Address: Hamilton, Freetown, Sierra Leone
             </p>
-            <a href="tel:+23278867291 " className="text-gray-600 mt-1">
-              Phone: +232 78867291
+            <a href="tel:+23279356563 " className="text-gray-600 mt-1">
+              Phone: +232 79 356 563
             </a>
             <br />
             <a
-              href="mailto:info@wattataxisl.com"
+              href="mailto:samuelmoiwa@gmail.com"
               className="text-gray-600 mt-1"
             >
               Email: samuelmoiwa@gmail.com
