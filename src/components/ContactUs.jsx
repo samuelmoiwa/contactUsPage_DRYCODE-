@@ -199,7 +199,7 @@ function ContactUs() {
                         errors.message ? "border-red-500" : ""
                       } appearance-none border
                         rounded-lg w-full py-2 px-3 pl-10
-              text-gray-700 leading-tight focus:outline-none focus:border-purple`}
+                        text-gray-700 leading-tight focus:outline-none focus:border-purple`}
                       placeholder="Write your message here"
                       rows="6"
                       {...register("message", { required: true })}
