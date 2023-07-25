@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/contact_us_page_drycode/static/css/main.f9887738.css",
-    "main.js": "/contact_us_page_drycode/static/js/main.43c9758a.js",
+    "main.css": "/contact_us_page_drycode/static/css/main.e234b75b.css",
+    "main.js": "/contact_us_page_drycode/static/js/main.4f668e96.js",
     "static/media/mail_moiwa_logo.png": "/contact_us_page_drycode/static/media/mail_moiwa_logo.7d57cf8feae79f4bdf66.png",
     "static/media/icon_github.svg": "/contact_us_page_drycode/static/media/icon_github.cb905c53506059026203bf1fce5bca9a.svg",
     "static/media/icon_phone.svg": "/contact_us_page_drycode/static/media/icon_phone.13f1fdab3406385192121d8c4ea97dd8.svg",
     "index.html": "/contact_us_page_drycode/index.html",
     "static/media/icon_linkedin.svg": "/contact_us_page_drycode/static/media/icon_linkedin.ef7282fb5b37f812469aba4674749244.svg",
     "static/media/icon_facebook.svg": "/contact_us_page_drycode/static/media/icon_facebook.453274a80d1972c9be74893abdb65159.svg",
-    "main.f9887738.css.map": "/contact_us_page_drycode/static/css/main.f9887738.css.map",
-    "main.43c9758a.js.map": "/contact_us_page_drycode/static/js/main.43c9758a.js.map"
+    "main.e234b75b.css.map": "/contact_us_page_drycode/static/css/main.e234b75b.css.map",
+    "main.4f668e96.js.map": "/contact_us_page_drycode/static/js/main.4f668e96.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9887738.css",
-    "static/js/main.43c9758a.js"
+    "static/css/main.e234b75b.css",
+    "static/js/main.4f668e96.js"
   ]
 }
