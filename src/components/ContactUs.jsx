@@ -259,7 +259,6 @@ function ContactUs() {
               flex justify-center item-center"
             >
               <Lottie options={animationOptions} height={350} width={350} />
-
               <div
                 className="flex space-y-4 sm:items-center
                   sm:flex-row sm:space-y-0 mt-6
