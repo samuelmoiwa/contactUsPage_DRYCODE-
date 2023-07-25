@@ -259,10 +259,12 @@ function ContactUs() {
               class="w-full sm:w-1/2 p-6 sm:order-first flex-col
               flex justify-center item-center"
             >
+
               <Lottie options={animationOptions} height={350} width={350} />
+
               <div
-                className="flex space-y-4 sm:items-center
-                  sm:flex-row sm:space-y-0 mt-6
+                className="flex space-y-0 sm:items-center
+                  sm:flex-row sm:space-y-0 space-x-4 mt-6
                   sm:space-x-4 lg:justify-center md:items-center"
               >
                 <a
