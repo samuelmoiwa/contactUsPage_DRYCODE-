@@ -213,27 +213,27 @@ function ContactUs() {
                   )}
                 </div>
                 <div className="flex items-center justify-center">
-                  <button
-                    className={`${
-                      loading
-                        ? "bg-cl_blue-4 cursor-not-allowed"
-                        : "bg-cl_blue-4 transform hover:scale-110 transition-transform duration-300"
-                    } text-white font-bold py-2 px-4 rounded-lg flex items-center focus:outline-none`}
-                    type="submit"
-                    disabled={loading}
-                  >
-                    {loading ? (
-                      <>
-                        <span className="mr-2">Loading</span>
-                        <AiOutlineLoading className="animate-spin h-5 w-5 text-white" />
-                      </>
-                    ) : (
-                      <>
-                        <span>Submit</span>
-                        <IoIosSend className="ml-2 h-5 w-5" />
-                      </>
-                    )}
-                  </button>
+                <button
+  className={`${
+    loading
+      ? "bg-cl_blue-4 cursor-not-allowed"
+      : "bg-cl_blue-4 transform hover:scale-110 transition-transform duration-300"
+  } text-white font-bold py-2 px-4 rounded-lg flex items-center focus:outline-none`}
+  type="submit"
+  disabled={loading}
+>
+  {loading ? (
+    <>
+      <span className="mr-2">Loading</span>
+      <AiOutlineLoading className="animate-spin h-5 w-5 text-white" />
+    </>
+  ) : (
+    <>
+      <span>Submit</span>
+      <IoIosSend className="ml-2 h-5 w-5" />
+    </>
+  )}
+</button>
                 </div>
                 <input type="hidden" value={loading} {...register("loading")} />
 
